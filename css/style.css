@@ -187,3 +187,27 @@ h1, h2, h3 {
     border-radius: 12px;
     margin: auto auto 0;
 }
+
+.site-footer {
+    background-color: #4D0E12;
+    color: #F5EFC6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer p {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links p {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
