@@ -124,5 +124,66 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
+.projects  {
+    margin: 40px 80px 80px;
+}
 
+.projects h2 {
+    font-family: serif;
+    font-size: 48px;
+    font-size: 400;
+    color: #4D0E12;
+    margin-bottom: 16px;
+}
 
+.card-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: #F5EFC6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.card :nth-child(2) {
+    background-color: #C9CD9B;
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #231815;
+}
+
+.card p {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #4A2E27;
+}
+
+.card a {
+    display: block;
+    background-color: #4D0E12;
+    color: #F5EFC6;
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 140px;
+    padding: 10px;
+    border-radius: 12px;
+    margin: auto auto 0;
+}
