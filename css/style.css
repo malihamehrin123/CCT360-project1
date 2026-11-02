@@ -57,12 +57,12 @@ h1, h2, h3 {
 .hero-intro h1 {
     font-family: "Playfair Display", Georgia;
     font-size: 48px;
-    font-weight: 500px;
+    font-weight: 500;
     color: #4D0E12;
     margin-bottom: 15px;
 }
 .hero-intro p {
-    font-family: "Mada" sans-serif;
+    font-family: "Mada", sans-serif;
     font-size: 20px;
     font-weight: 600;
     color: #231815;
@@ -130,11 +130,13 @@ h1, h2, h3 {
 }
 
 .cards-gallery  {
-    margin: 40px 80px 80px;
+    max-width: 1320px;
+    margin: 40px auto 80px;
+    padding: 0 20px;
 }
 
 .cards-gallery h2 {
-    font-family: "Playfair Display" serif;
+    font-family: "Playfair Display", serif;
     font-size: 48px;
     font-weight: 400;
     color: #4D0E12;
@@ -200,13 +202,14 @@ h1, h2, h3 {
 .detail-hero {
     background-color: #F5EFC6;
     margin: 10px 0 20px;
+    padding: 25px 30px;
     min-height: 220px;
 }
 
 .detail-hero h1 {
     font-family: "Playfair Display", Georgia;
     font-size: 40px;
-    font-weight: 700px;
+    font-weight: 700;
     color: #231815;
     margin-bottom: 7px;
 }
@@ -236,7 +239,7 @@ h1, h2, h3 {
 
 .content-grid {
     display: grid;
-    grid-template-columns: minmax(0, 3fr) minmac(0, 1fr);
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
     gap: 20px;
 }
 
@@ -303,13 +306,13 @@ h1, h2, h3 {
 .project-sidebar h2 {
     font-family: "Playfair Display", Georgia;
     font-size: 36px;
-    font-weight: 600px;
+    font-weight: 600;
     color: #231815;
     margin-bottom: 20px;
 }
 
 .project-sidebar h3 {
-    font-family: "Playfair Dsiplay", Georgia;
+    font-family: "Playfair Display", Georgia;
     font-size: 24px;
     font-weight: 500;
     color: #4D0E12;
@@ -344,9 +347,10 @@ h1, h2, h3 {
     background-color: #4D0E12;
     color:#F5EFC6;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 25px 40px;
+    position: relative;
 }
 
 .site-footer p {
@@ -357,7 +361,10 @@ h1, h2, h3 {
 .footer-links {
     display: flex;
     gap: 15px;
+    position: absolute;
+    right: 40px;
 }
+
 
 .footer-links a {
     font-family: "Mada", sans-serif;
@@ -432,7 +439,7 @@ h1, h2, h3 {
         margin: 30px 20px;
     }
 
-    .cards-gallery {
+    .cards-gallery  h2 {
         font-size: 36px;
     }
 
@@ -527,13 +534,12 @@ h1, h2, h3 {
 
     .site-footer {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
         gap: 15px;
         padding: 20px;
     }
 
-    .footer-links a {
-        font-size: 16px;
+    .footer-links  {
+        position: static;
+        justify-content: center;
     }
 }
