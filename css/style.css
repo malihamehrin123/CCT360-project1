@@ -81,6 +81,7 @@ h1, h2, h3 {
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
+    border-radius: 12px;
 }
 .hero-info {
     background-color: #F5EFC6;
@@ -149,7 +150,7 @@ h1, h2, h3 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
     gap: 30px;
 }
 
@@ -244,7 +245,7 @@ h1, h2, h3 {
 
 .content-grid {
     display: grid;
-    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -372,7 +373,7 @@ h1, h2, h3 {
 
 
 .footer-links a {
-    font-family: "Playfiar Display", Georgia;
+    font-family: "Playfair Display", Georgia;
     font-size: 20px;
     color: #F5EFC6;
     text-decoration: none;
@@ -548,5 +549,11 @@ h1, h2, h3 {
     .footer-links  {
         position: static;
         justify-content: center;
+    }
+}
+
+@media (min-wsidth: 768px) {
+    .content-grid {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
     }
 }
